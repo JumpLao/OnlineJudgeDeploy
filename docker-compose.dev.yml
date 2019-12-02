@@ -47,7 +47,9 @@ services:
   
   oj-backend:
     # image: registry.cn-hangzhou.aliyuncs.com/onlinejudge/oj_backend
-    build: ../OnlineJudge
+    build:
+      context: ../OnlineJudge
+      dockerfile: ./Dockerfile-dev
     image: jumplao/oj_backend
     container_name: oj-backend
     restart: always
