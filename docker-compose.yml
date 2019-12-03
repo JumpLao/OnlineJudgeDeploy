@@ -21,7 +21,7 @@ services:
 
   judge-server:
     # image: registry.cn-hangzhou.aliyuncs.com/onlinejudge/judge_server
-    build: ../JudgeServer
+    build: ./JudgeServer
     image: jumplao/judge_server
     container_name: judge-server
     restart: always
@@ -47,7 +47,7 @@ services:
   
   oj-backend:
     # image: registry.cn-hangzhou.aliyuncs.com/onlinejudge/oj_backend
-    build: ../OnlineJudge
+    build: ./OnlineJudge
     image: jumplao/oj_backend
     container_name: oj-backend
     restart: always
